@@ -2,13 +2,15 @@
 
 ## 题目梳理
 
+> http://www.m2ct.org/view-page.jsp?editId=12&uri=0D00233&gobackUrl=modular-list.jsp&pageType=smxly&menuType=flowUp
+
 ![image-20200821221840421](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20200821221840421.png)
 
 - 网络中三类节点：数据中心DC（Data Center）、传感器（Sensors）、移动充电器MC（Mobile Charger）
 
 - Sensors：
   - 能量来源：环境能量、MC
-  - 传感器都有特定的能量消耗速率，以及固定的电池容量
+  - 传感器都有特定的能量消耗速率，以及**固定的电池容量**
   - 当**一个**传感器的电量低于一个阈值时便无法进行正常的信息采集工作
 - MC：
   - 能量消耗：

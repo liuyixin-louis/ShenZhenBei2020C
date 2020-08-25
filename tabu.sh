@@ -1,0 +1,1 @@
+python tabu_search.py -f data.txt -i 1000000 -s 1000
