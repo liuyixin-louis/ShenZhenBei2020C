@@ -252,6 +252,7 @@ def tabu_search(
 
 
 def main(args=None):
+    import time
     t1 = time.time()
     dict_of_neighbours = generate_neighbours(args.File)
 
@@ -271,7 +272,7 @@ def main(args=None):
     import datetime
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     f = open('log.txt','a+',encoding='utf-8')
-    res = "{now}：Timing：{tcomp},Iterations：{args.Iterations},Size：{args.Size},Best solution: {best_sol}, with total distance: {best_cost}.\n"
+    res = "Best distance：{};Date：{};Timing：{};Iterations：{};Size：{};Best solution: {};\n".format(best_cost,now,tcomp,args.Iterations,args.Size,best_sol)
     f.write(res)
     f.close()
 
